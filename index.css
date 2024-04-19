@@ -1,141 +1,148 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 .container {
-    width: 100%;
-    min-height: 100vh;
-    background-color: #708090;
-    padding: 10px;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #708090;
+    padding: 10px;
 }
 .todo-app {
-    width: 100%;
-    max-width: 540px;
-    background: #fff;
-    margin: 100px auto 20px;
-    padding: 40px 30px 70px;
-    border-radius: 10px;
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
 }
 
 h2 {
-    color: #002765;
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 img {
-    height: 120px;
-    width: 120px;
-    margin-left: 210px;
+    height: 120px;
+    width: 120px;
+    margin-left: 210px;
 }
 
 .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #edeef0;
-    border-radius: 30px;
-    padding-left: 20px;
-    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
 }
 
 .showItems {
 
-    border-radius: 30px;
-    margin-left: -16px;
-    
+    border-radius: 30px;
+    margin-left: -16px;
+    
 
-    
+    
 }
 
 .eachItem:hover{
-    
-    background-color: rgba(230, 83, 29, 0.205);
-    .delete{
-        background-color: rgb(230, 82, 29);
-    }
+    
+    background-color: rgba(230, 83, 29, 0.205);
+    .delete{
+        background-color: rgb(230, 82, 29);
+    }
 }
 
 
 .eachItem{
-    
-    padding-left: 20px;
-    background-color: #edeef0;
-    border: 1px solid black;
-    margin: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 30px;
+    
+    padding-left: 20px;
+    background-color: #edeef0;
+    border: 1px solid black;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    width: 100%;
+}
+.complete-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .task{
-    color: orangered;
+    color: orangered;
 }
 .row:hover{
-    color: orangered;
-    background-color: rgba(230, 83, 29, 0.205);
+    color: orangered;
+    background-color: rgba(230, 83, 29, 0.205);
 }
 input {
-    flex: 1;
-    border: none;
-    outline: none;
-    background: transparent;
-    padding: 10px;
-    font-weight: 14px;
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
 }
 .btn-add{
-    border: none;
-    outline: none;
-    padding: 16px 50px;
-    background: #e6521d;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 40px;
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #e6521d;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 40px;
 }
 .delete{
-    border: none;
-    outline: none;
-    padding: 16px 50px;
-    background: #e6521d;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 40px;
+    border: none;
+    outline: none;
+    padding: 16px 38px;
+   
+    background: #e6521d;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 40px;
 }
 .complete{
-    border: none;
-    outline: none;
-    padding: 16px 50px;
-    background: #e6521d;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 40px;
+    border: none;
+    outline: none;
+    padding: 16px 28px;
+    background: #e6521d;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 40px;
 }
 
-@media only screen and (max-width: 375px) and (max-height: 812px) {
-    .todo-app {
-        padding: 20px 15px 50px; /* Adjust padding for smaller screens */
-    }
+@media only screen and (max-width: 500px) and (max-height: 812px) {
+    .todo-app {
+        padding: 20px 15px 50px; /* Adjust padding for smaller screens */
+    }
 
-    .container {
-        padding: 5px; /* Adjust container padding for smaller screens */
-    }
+    .container {
+        padding: 5px; /* Adjust container padding for smaller screens */
+    }
 
-    img {
-        height: 80px;
-        width: 80px;
-        margin-left: auto; /* Center the image horizontally on smaller screens */
-        margin-right: auto;
-    }
+    img {
+        height: 80px;
+        width: 80px;
+        margin-left: auto; /* Center the image horizontally on smaller screens */
+        margin-right: auto;
+    }
 
-    .row,
-    .eachItem {
-        margin: 10px 0; /* Reduce margin for rows and items on smaller screens */
-    }
+    .row,
+    .eachItem {
+        margin: 10px 0; /* Reduce margin for rows and items on smaller screens */
+    }
 
-    .btn-add,
-    .delete {
-        padding: 12px 40px; /* Adjust button padding for smaller screens */
-    }
+    .btn-add,
+    .delete {
+        padding: 12px 40px; /* Adjust button padding for smaller screens */
+    }
 }
